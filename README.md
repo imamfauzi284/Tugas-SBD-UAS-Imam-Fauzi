@@ -29,7 +29,7 @@
 
 ## menampilkan tabel user
 ![10 tabel user](https://user-images.githubusercontent.com/106543547/179646462-647faf9e-b0f5-4cf2-bc52-380d9d4c0ab8.JPG)
-### Implementasi Fungsi.
+#### Implementasi Fungsi.
 #### Mengimplementasikan Fungsi untuk menampilkan total data :
 #### CREATE FUNCTION fn_totalUsers() 
 #### RETURNS INT(11) 

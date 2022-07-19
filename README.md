@@ -29,8 +29,8 @@
 
 ## menampilkan tabel user
 ![10 tabel user](https://user-images.githubusercontent.com/106543547/179646462-647faf9e-b0f5-4cf2-bc52-380d9d4c0ab8.JPG)
-#### Implementasi Fungsi.
-## Mengimplementasikan Fungsi untuk menampilkan total data :
+## Implementasi Fungsi.
+### Mengimplementasikan Fungsi untuk menampilkan total data :
 #### CREATE FUNCTION fn_totalUsers() RETURNS INT(11) UNSIGNED NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER RETURN (SELECT COUNT(id_pasien) FROM pasien)
 ## menampilkan Dashboard Sistem Klinik
 ![11 dashboard](https://user-images.githubusercontent.com/106543547/179646502-b30bbcf1-08ac-426b-91ec-48d91041c694.JPG)

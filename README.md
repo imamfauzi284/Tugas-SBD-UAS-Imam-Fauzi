@@ -21,8 +21,12 @@
 ![7 hasil hapus pasien](https://user-images.githubusercontent.com/106543547/179646433-bc390ace-d00a-4065-a45a-a9079407f131.JPG)
 ## menampilkan data dokter
 ![8 tabel dokter](https://user-images.githubusercontent.com/106543547/179646442-cb974a90-7d6c-4cf8-bb9c-74ce14157808.JPG)
+#### Pada Data dokter pada sistem klinik juga di berikan perintah tambah, hapus dan juga edit
 ## menampilkan data obat
 ![9 tabel obat](https://user-images.githubusercontent.com/106543547/179646453-e0156cb5-b909-4739-b742-508da1504b58.JPG)
+#### Jadi Fungsi dari triger ini untuk menampilkan perubahan nama obat setelah dilakukan proses update pada sistem klinik tersebut.Didalam modul data obat saya memberikan Trigger create table log_obat(id_log int(100) auto_increment primary key, id_obat int(10), nama_obat_lama varchar(100), nama_obat_baru varchar(100), waktu date not null)
+#### create trigger update_nama_obat before update on obat for each row insert into log_obat set id_obat=old.id_obat, nama_obat_lama = old.nama_obat, nama_obat_baru=new.nama_obat, waktu = now();
+
 ## menampilkan tabel user
 ![10 tabel user](https://user-images.githubusercontent.com/106543547/179646462-647faf9e-b0f5-4cf2-bc52-380d9d4c0ab8.JPG)
 ## menampilkan Dashboard Sistem Klinik
